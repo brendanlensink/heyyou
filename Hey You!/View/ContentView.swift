@@ -16,16 +16,16 @@ struct ContentView: View {
             model.danceColor
                 .edgesIgnoringSafeArea(.all)
 
-//            VStack {
-//                switch model.connectionState {
-//                case .connected:
+            VStack {
+                switch model.connectionState {
+                case .connected:
                     ConnectedView(model: model)
-//                case .searching:
-//                    SearchingView()
-//                case .noConnection:
-//                    TimeoutView()
-//                }
-//            }
+                case .searching:
+                    SearchingView()
+                case .noConnection:
+                    TimeoutView()
+                }
+            }
         }
     }
 }
